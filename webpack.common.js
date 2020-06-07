@@ -12,8 +12,7 @@ module.exports = {
     path: __dirname + "/dist",
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: [/.js$/],
         exclude: /(node_modules)/,
         use: {
@@ -29,14 +28,12 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "img/[name].[hash:8].[ext]",
-            },
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "img/[name].[hash:8].[ext]",
           },
-        ],
+        }, ],
       },
     ],
   },
@@ -47,7 +44,9 @@ module.exports = {
 
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "public" }],
+      patterns: [{
+        from: "public"
+      }],
     }),
 
     /* here you can define another html file and its dependencies */
@@ -58,10 +57,22 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/HTML.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["index"],
+      filename: "HTML.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/CSS.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "CSS.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/JS.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "JS.html",
     }),
   ],
 };

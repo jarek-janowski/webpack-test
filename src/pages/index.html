@@ -1,17 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
-  </body>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav class="navigation navigation--js">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="HTML.html">HTML</a>
+            <a class="navigation__link" href="CSS.html">CSS</a>
+            <a class="navigation__link" href="JS.html">JavaScript</a>
+        </nav>
+        <button class="hamburger hamburger--js" aria-label="otwórz menu"><i class="fas fa-bars"></i></button>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main-heading main-heading--js">Jarek Janowski - Strona główna</h1>
+        </header>
+        <section class="about-me">
+            <h2 class="about-me__heading">Kim jestem?</h2>
+            <img class="about-me__img" src="../assets/img/david brent.gif" alt="david brent dancing">
+            <p class=about-me__description>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum placeat
+                quibusdam quae ad totam, quos
+                eaque
+                enim voluptate ab nulla vitae accusamus esse. Iure, nihil. Laudantium reiciendis totam dicta voluptas.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse voluptates numquam, dolores molestias
+                sit, aliquam facilis consectetur repellendus quis pariatur aspernatur laboriosam! Dolor reprehenderit
+                officia facilis, dignissimos officiis aliquid aliquam.</p>
+        </section>
+        <section class="wtf">
+            <h2 class="wtf__heading">Co ten frontend</h2>
+            <article class="correct-html">
+                <h3 class="correct-html__tittle">Jak stworzyć prawidłowego HTML-a</h3>
+                <p class="correct-html__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                    saepe, commodi assumenda dolorem amet
+                    minus cum recusandae doloremque ipsum provident dolore magnam ad similique? Minus totam iusto labore
+                    cumque non? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non excepturi tempore
+                    a dolore fugit est incidunt, reiciendis consectetur ratione ipsum quibusdam omnis? Laudantium culpa
+                    voluptatibus perspiciatis ducimus, eius exercitationem.</p>
+            </article>
+            <article class="correct-html">
+                <h3 class="correct-html__tittle">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+                <p class="correct-html__description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consequatur reprehenderit minima ad vitae
+                    accusantium cum aut qui inventore ducimus architecto itaque deserunt rerum a, deleniti tenetur,
+                    tempore
+                    provident ab eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus eos
+                    et expedita ratione, sint iste deserunt consequuntur nihil, earum maiores id. Eum, fugiat
+                    perspiciatis! Molestias sed incidunt rerum! Corrupti. Lorem ipsum dolor sit, amet consectetur
+                </p>
+            </article>
+            <article class="correct-html">
+                <h3 class="correct-html__tittle">Czy hiperdivoza jest uleczalna?</h3>
+                <p class="correct-html__description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consequatur reprehenderit minima ad vitae
+                    accusantium cum aut qui inventore ducimus architecto itaque deserunt rerum a, deleniti tenetur,
+                    tempore
+                    provident ab eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus eos
+                    et expedita ratione, sint iste deserunt consequuntur nihil, earum maiores id. Eum, fugiat
+                    perspiciatis! Molestias sed incidunt rerum! Corrupti. Lorem ipsum dolor sit, amet consectetur
+                </p>
+            </article>
+            <article class="correct-html">
+                <h3 class="correct-html__tittle">Czy CSS'sy wybaczają?</h3>
+                <p class="correct-html__description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consequatur reprehenderit minima ad vitae
+                    accusantium cum aut qui inventore ducimus architecto itaque deserunt rerum a, deleniti tenetur,
+                    tempore
+                    provident ab eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus eos
+                    et expedita ratione, sint iste deserunt consequuntur nihil, earum maiores id. Eum, fugiat
+                    perspiciatis! Molestias sed incidunt rerum! Corrupti. Lorem ipsum dolor sit, amet consectetur
+                </p>
+            </article>
+        </section>
+        <aside class="aside">
+            <h2 class="aside__tittle">Author</h2>
+            <p class="aside__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque deleniti
+                numquam, facilis alias
+                similique qui unde earum quaerat vero, facere quam sequi, nemo accusantium molestiae doloremque et
+                voluptates fugiat maxime.</p>
+        </aside>
+
+    </main>
+
+    <a class="navigator" href="#body"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+
+    <footer class="footer">
+        <p class="footer__description footer__decription--js">WTF co ten frontend, all rights reserved</p>
+
+    </footer>
+
+</body>
+
 </html>
